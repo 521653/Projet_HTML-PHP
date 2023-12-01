@@ -1,0 +1,91 @@
+
+
+.div-input {
+    
+    width: 200px;
+    padding: 6px;
+}
+
+#div-submit {
+    width: 260px;
+    padding: 20px;
+}
+
+
+
+input, textarea{
+    margin: 5px;
+    border: 1px rgb(196, 194, 194) solid;
+    padding: 5px;
+    border-radius: 4px;
+    font-family:  verdana, arial, sans-serif;
+}
+input:focus{
+    background-color: rgb(231, 229, 229);}
+
+input#submit{
+    background-color: rgb(118, 228, 236);
+    color: #FFFFFF;
+    padding: 6px 20px;
+    border: none;
+    margin: 5px;
+    width: 160px;
+}
+
+
+/*textarea{
+    outline: none;
+    border: 1px grey solid;
+    padding: 10px;
+    border-radius: 4px;
+    font-family:  verdana, arial, sans-serif;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+
+}*/
+textarea:focus{
+    background-color: rgb(231, 229, 229);
+}
+
+
+
+h1{
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    justify-content: center;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "i1 i2"
+    "i3 i4"
+    "i5 i5"
+    "ta ta"
+    "bt vi";
+}
+
+textarea{
+    grid-area: ta;
+}
+
+.txt{
+    height: 90px;
+}
+
+#submit{
+    grid-area: bt;
+    cursor: pointer;
+}
+
+input{
+    height: 40px;
+}
+#submit:hover{
+    background: rgb(167, 167, 233);
+}
